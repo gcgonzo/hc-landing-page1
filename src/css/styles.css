@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Rosario:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rosario', sans-serif;
+}
+
+body {
+    background-color: #E7E8F0;    
+}
+.home {
+    width: 100vw;
+    height: 100vh;
+    color: #00455B;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+header .login {
+   display: flex;
+   align-items: center;
+   margin: 1.5rem; 
+}
+header .login h1 {
+    margin-left: 0.5rem;
+}
+header nav ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    font-size: 1.6rem;
+}
+header nav li a{
+    text-decoration: none;
+    color: #00455B;
+    font-weight: 700;
+}
+
+header button {
+    width: 180px;
+    height: 50px;
+    margin-right: 2rem;
+    border: 0;
+    background-color: #00738F;
+    font-size: 24px;
+    border-radius: 25px;
+    color: #fff;
+}
+header button:hover {   
+    background-color: #2daece;    
+}
+
+/* Main */
+
+main .container-home { 
+    display: flex;
+    height: 812px;      
+}
+
+/* ---Leftside--- */
+
+
+.leftside {
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-end; 
+       
+}
+.leftside .title {
+    width: 70%; 
+}
+.leftside .title h1{
+    font-size: 4.4rem;
+    padding-bottom: 1rem;
+}
+.leftside .title .btn{    
+    padding-top: 2rem;
+}
+.leftside .title .btn-itens {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5rem;   
+}
+.leftside .title .btn-itens:nth-child(1){
+    background-color: #00F7FF;
+    color: #00738F;
+}
+.leftside .title .btn-itens:nth-child(2){
+    background-color: #00738F;
+    color: #fff;
+}
+.leftside .imgBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* ---Rightside--- */
+
+
+.rightside {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.rightside img {
+    width: 70%;
+}
